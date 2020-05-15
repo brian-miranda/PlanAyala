@@ -1,0 +1,713 @@
+/* ----------------------- FUENTES ----------------------- */
+@font-face {
+  font-family: "Odibee_Sans";
+  src: url(work/models/memorica/recursos/Type/OdibeeSans-Regular.ttf) format("truetype");
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url(work/models/memorica/recursos/Type/RobotoCondensed-Regular.ttf) format("truetype");
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "Roboto_Condensed_Bold";
+  src: url(work/models/memorica/recursos/Type/RobotoCondensed-Bold.ttf) format("truetype");
+  font-style: bold;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "Roboto_Condensed_Italic";
+  src: url(work/models/memorica/recursos/Type/RobotoCondensed-Italic.ttf) format("truetype");
+  font-style: italic;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* ----------------------- GENERAL ----------------------- */
+html {
+  height: 100%;
+  font-size: 19px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #F6DFCD;
+}
+
+#loader {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  margin: 0;
+}
+
+#loader h3 {
+  color: #C33426;
+}
+
+.spinner {
+  border: 10px solid gray;
+  /* Light grey */
+  border-top: 10px solid #C33426;
+  /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: #C33426;
+  font-family: "Odibee_Sans";
+  font-size: 4.3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Odibee_Sans";
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Odibee_Sans";
+  font-size: 2rem;
+  text-align: left;
+}
+
+h4 {
+  font-family: "Odibee_Sans";
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+p, a, li {
+  color: #42170E;
+  font-family: "Roboto_Condensed";
+  font-style: normal;
+  text-align: justify;
+}
+
+a {
+  font-size: 20px;
+  font-family: "Roboto_Condensed_Bold";
+  font-style: normal;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.sala {
+  background-image: url(work/models/memorica/recursos/img/plan_ayala/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.sala h2, .sala a, .sala h3 {
+  color: #C33426;
+}
+
+.sala h3 {
+  text-align: center;
+}
+
+.sala a {
+  text-align: right;
+}
+
+h3.quote {
+  color: #C33426;
+}
+
+h4 {
+  color: #C33426;
+}
+
+.modal-body a {
+  font-size: 18px;
+}
+
+.modal-content {
+  background-color: #F6DFCD;
+}
+
+.separador {
+  height: 60%;
+}
+
+.separador-chico {
+  height: 50%;
+}
+
+.separador h1, .separador-chico h1 {
+  color: #F6DFCD;
+}
+
+.verde {
+  background-image: url(work/models/memorica/recursos/img/plan_ayala/separador_verde.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rojo {
+  background-image: url(work/models/memorica/recursos/img/plan_ayala/separador_rojo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------- PORTADA ----------------------- */
+#first {
+  background-image: url(work/models/memorica/recursos/img/plan_ayala/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+}
+
+#cover {
+  height: 100%;
+  width: 100%;
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+}
+
+.zapata img {
+  max-height: 840px;
+}
+
+#intro {
+  min-height: 100%;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5%;
+  transition: all 0.5s ease;
+  margin-bottom: -1px;
+}
+
+.scroll:hover {
+  height: 6%;
+}
+
+.scroll img {
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom;
+}
+
+a.scroll {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scroll p {
+  color: #42170E;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------- ÍNDICE ----------------------- */
+#indice, #outro {
+  background-color: #C33426;
+  width: 100%;
+  background-image: url(work/models/memorica/recursos/img/plan_ayala/fondo_indice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#indice h2, #indice h3, #indice p, #indice a, #outro p, #outro a {
+  color: #F6DFCD;
+  text-align: left
+}
+
+.thumb {
+  overflow: hidden;
+}
+
+a img {
+  transition: all 0.5s, transform 0.5s;
+  width: 100%;
+  opacity: 1;
+}
+
+a img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* ----------------------- EPILOGO ----------------------- */
+#outro p {
+  text-align: justify;
+}
+
+#outro h2 {
+  color: #F6DFCD;
+}
+
+/* ----------------------- NAVBAR ----------------------- */
+.share {
+  position: fixed;
+  top: 2.7%;
+  right: 5%;
+}
+
+.button_container {
+  position: fixed;
+  top: 3.2%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+.button_container:hover {
+  opacity: .7;
+}
+
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+
+.button_container span {
+  background: #000;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .5s;
+}
+
+.overlay.open li:nth-of-type(5) {
+  animation-delay: .55s;
+}
+
+.overlay.open li:nth-of-type(6) {
+  animation-delay: .6s;
+}
+
+.overlay.open li:nth-of-type(7) {
+  animation-delay: .65s;
+}
+
+.overlay.open li:nth-of-type(8) {
+  animation-delay: .7s;
+}
+
+.overlay.open li:nth-of-type(9) {
+  animation-delay: .75s;
+}
+
+.overlay.open li:nth-of-type(10) {
+  animation-delay: .8s;
+}
+
+.overlay.open li:nth-of-type(11) {
+  animation-delay: .85s;
+}
+
+.overlay.open li:nth-of-type(12) {
+  animation-delay: .85s;
+}
+
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.overlay ul li {
+  display: block;
+  height: 7%;
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  font-family: "Odibee_Sans";
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+/* ----------------------- INTERACTIVO ----------------------- */
+#esqueleto {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#esqueleto h2, #esqueleto h3  {
+  color: #42170E;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes entrance {
+  0% {
+    font-size: 1em;
+  }
+
+  50% {
+    font-size: 1em;
+  }
+}
+
+span {
+  animation: entrance 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button {
+  width: auto;
+  height: auto;
+  font-family: 'Odibee_Sans';
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  padding: 5%;
+  border: none;
+  margin: 0%;
+  transition: all .5s ease-in-out .5s;
+}
+
+button:hover {
+  color: rgb(126, 16, 58);
+  font-style: oblique;
+  cursor: pointer;
+  height: 125%;
+}
+
+#agn {
+  background-color: #19b3e6;
+}
+
+#unam {
+  background-color: #ffcc00;
+}
+
+#diario {
+  background-color: #ff1493;
+}
+
+#carso {
+  background-color: #afde62;
+}
+
+#amez {
+  background-color: #ca6a10;
+}
+
+#base {
+  background-color: #42170E;
+  color: whitesmoke;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 145px;
+}
+
+#nav-small {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  height: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 75px;
+  z-index: 2;
+}
+
+#nav button {
+  text-align: left;
+}
+
+#esqueleto {
+  margin: 5% 0% 25% 0%;
+  font-size: 1.15em;
+  animation: slidein 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#warning p {
+  text-align: center;
+  color: #F6DFCD;
+}
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p, a, li {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .overlay nav {
+    top: 45%;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  .share {
+    top: 6.5%;
+    right: 3%;
+  }
+
+  .overlay nav {
+    top: 39%;
+  }
+
+  .overlay ul li {
+    height: 1%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  .share {
+    top: 85%;
+    right: 3%;
+  }
+
+  .overlay nav {
+    top: 39%;
+  }
+
+  .overlay ul li {
+    height: 1%;
+  }
+  .logo {
+    max-height: 35px;
+    max-width: 35px;
+  }
+  .button_container {
+    top: 3.5%;
+    right: 6%;
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

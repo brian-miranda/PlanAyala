@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" type="image/ico" href="work/models/memorica/recursos/img/favicon/favicon.ico"/>
+  <title>
+    Plan de Ayala
+  </title>
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="expo_style.css" type="text/css" rel="stylesheet">
+
+  <!-- reserved for styles, don't forget to remove the / from the thing -->
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="spinner mb-1"></div>
+    <h3>Cargando</h3>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar fixed-top navbar-light bg-transparent">
+      <a class="navbar-brand" href="https://memoricamexico.gob.mx/es/memorica/Exposiciones">
+        <img type="image/svg+xml" src="work/models/memorica/recursos/img/plan_ayala/logui.svg" alt="" class="logo" width="50px" height="50px">
+      </a>
+      <a href="" data-toggle="modal" data-target="#modalbotonescompartir" title="Compartir" class="share">
+        <img type="image/svg+xml" alt="Compartir en redes Sociales" src="work/models/memorica/recursos/img/plan_ayala/share.svg" title="Compartir en redes Sociales" alt="botón compartir" width="35px" height="35px">
+      </a>
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul>
+        <li><a class="go" href="#cover">PORTADA</a></li>
+        <li><a class="go" href="#intro">INTRODUCCIÓN</a></li>
+        <li><a class="go" href="#indice">ÍNDICE</a></li>
+        <li><a class="go" href="#sala1">SALA 1</a></li>
+        <li><a class="go" href="#sala2">SALA 2</a></li>
+        <li><a class="go" href="#sala3">SALA 3</a></li>
+        <li><a class="go" href="#sala4">SALA 4</a></li>
+        <li><a class="go" href="#sala5">SALA 5</a></li>
+        <li><a class="go" href="#sala6">SALA 6</a></li>
+        <li><a class="go" href="/{user@getLanguage}/{topic@getWebSiteId}/Plan_de_Ayala_Interactivo">COMPARA</a></li>
+        <li><a class="go" href="#outro">EPÍLOGO</a></li>
+        <li><a class="go" href="#creditos">REFERENCIAS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="modal fade" id="modalbotonescompartir" tabindex="-1" role="dialog" aria-labelledby="modalbotonescompartir" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Compartir</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex justify-content-around">
+          <RESOURCE TYPE="JSPEditor" STYPE="FBShareButton" />
+          <RESOURCE TYPE="JSPEditor" STYPE="TWShareButton" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="first">
+    <!-- Portada -->
+    <div id="cover" class="container-fluid">
+      <div class="splash pt-5 col-sm-12 d-flex flex-column align-items-center justify-content-between">
+        <h1 class="mt-5 pb-1">“–¡ESOS QUE NO TENGAN MIEDO,<br> QUE PASEN A FIRMAR!”</h1>
+        <div class="zapata">
+          <img src="work/models/memorica/recursos/img/plan_ayala/zapata_cover.png" class="img-fluid px-sm-5" alt="">
+        </div>
+        <!-- <a href="#intro" class="scroll d-flex">
+          <p>ENTRAR</p>
+          <img src="work/models/memorica/recursos/img/plan_ayala/scroll.svg" alt="">
+        </a> -->
+      </div>
+    </div>
+
+    <div id="intro" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <p class="">A finales de noviembre de 1911, Emiliano Zapata y Otilio Montaño redactaron un “plan revolucionario” al que todos llamamos de Ayala, aunque haya sido escrito cerca de Ayoxuxtla, un pequeño pueblo en las montañas suroccidentales
+            del estado de Puebla. Casi todas las personas que lo han estudiado están de acuerdo en que la mano que lo escribió fue la de Montaño —maestro de escuela, después de todo—, pero que las ideas, expresadas principalmente por Zapata,
+            articulaban el pensamiento de mucha gente más; de hecho, que expresaban el sentir de la mayor parte de los campesinos de México, particularmente del centro y el sur del país. Por eso se ha dicho que el plan de Ayala representa la voz del
+            campesinado en la Revolución mexicana.</p>
+          <p class="">Ese documento primigenio —las cuatro o cinco hojas de papel manuscritas por Montaño, donde los jefes de la revolución campesina del sur escribieron sus nombres el 25 o el 28 de noviembre, en la ceremonia de su proclamación— no
+            existe más. Se perdió seguramente en los últimos días de 1911, en el trajín de la guerra que los zapatistas sostenían contra el gobierno de Francisco I. Madero. Lo que existe y conocemos, lo que conocieron los mexicanos durante la
+            Revolución y hemos leído y estudiado desde entonces, son hasta seis versiones de ese texto emblemático y fundamental. ¡Seis! Es posible que todas procedan de la copia mecanografiada que un cura hizo a pedido de Zapata; posible pero no
+            seguro, pues —digámoslo de nuevo— nadie sabe qué le pasó al manuscrito de Montaño.</p>
+          <p class="">Esas seis versiones del plan de Ayala son la materia de esta exposición. Todas fueron producidas muy poco tiempo después de su proclamación. Una de ellas apareció en un periódico de la Ciudad de México; es también la más
+            conocida de todas, pues ha sido publicada en dos libros muy importantes. Otra fue impresa por el gobierno zapatista de Morelos, al parecer para que todo el mundo, especialmente en las ciudades y en las haciendas, supiera exactamente cuál
+            era la razón de la revolución campesina. Una de las dos mecanografiadas, fue capturada por el ejército federal a principios de 1912, y así confirmó para el gobierno lo que decían los periódicos. Las dos últimas, en fin, formaron parte de
+            los archivos personales de dos de los principales dirigentes de la revolución del sur; como además son versiones manuscritas —aunque no se sabe quién tomó la pluma para elaborarlas—, poseen un aura particular: parecen provenir del corazón
+            mismo del movimiento campesino.</p>
+          <p class="">Algunas de las diferencias entre las seis versiones son hasta cierto punto insignificantes, quizá producto de un error a la hora de hacer la copia. Otras son más significativas, posiblemente causadas porque la persona que copió
+            no entendió una palabra. Unas más debieron ser alteraciones deliberadas, hechas para aclarar o corregir lo que, en opinión del copista, decía —mal decía, desde su punto de vista— el original. ¿Cómo saber cuál de las seis es la más cercana
+            al original escrito por Zapata y Montaño?</p>
+          <p class="">Todas pueden haberlo sido. En más de un sentido, todas son auténticas aunque sean copias. Ninguna, por lo tanto, debería ser descartada de antemano. Por ello nos interesa contrastarlas, mostrar sus diferencias y, más aún, hacer
+            una propuesta: cómo las particularidades de cada una de las versiones son a la vez legítimas e interesantes, ¿cómo se vería un documento que las combinara?, ¿qué partes habría que tomar de una y de otra para obtener un mejor plan de
+            Ayala, más cercano al espíritu del documento primigenio o a la idea que tenemos de la revolución campesina?</p>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Índice -->
+  <div id="indice" class="container-fluid py-5">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6  px-5">
+        <h2 class="pb-4">SALAS:</h2>
+
+        <!-- Índice -->
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala1">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_01.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala1">
+              <h3>1. Ciudad de México</h3>
+            </a>
+            <p></p>
+            <p>El Diario del Hogar fue el primer periódico, y el único en ese momento, en imprimir íntegro, el plan de Ayala, el día 15 de diciembre de 1911. Este periódico, fundado por Filomeno Mata, circuló en la Ciudad de México entre los años
+              1881 y 1912.</p>
+            <a href="#sala1">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala2">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_02.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala2">
+              <h3>2. Mapaztlán de Ayala</h3>
+            </a>
+            <p></p>
+            <p>El Archivo General de la Nación, en el ramo Archivos particulares, incluye el fondo Genovevo de la O. El primer expediente de la caja 19 contiene otras copias del plan y actas de ratificación. El que nos interesa es el primer documento
+              del legajo;</p>
+            <a href="#sala2">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala3">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_03.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala3">
+              <h3>3. Tejalpa-Acatlán, Puebla</h3>
+            </a>
+            <p></p>
+            <p>En el expediente 1087 del fondo Gildardo y Octavio Magaña Cerda del Archivo Histórico de la UNAM se encuentra un facsímil del famoso plan de Ayala, de fecha 28 de noviembre de 1911. El expediente está compuesto por siete fotografías y
+              en ellas puede apreciarse la grafía clara con que fue copiado el célebre documento y las firmas de los generales, coroneles y capitanes que apoyaron el plan...</p>
+            <a href="#sala3">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala4">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_04.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala4">
+              <h3>4. Villa de Ayala</h3>
+            </a>
+            <p></p>
+            <p>Fue en el año de 1965 cuando la empresa Condumex, antecedente de la Fundación Carlos Slim, fundada por un grupo de inversionistas estadunidenses, italianos y mexicanos, rescató los archivos de Venustiano Carranza y Emiliano Zapata...
+            </p>
+            <a href="#sala4">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala5">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_05.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala5">
+              <h3>5. Ayoxuxtla</h3>
+            </a>
+            <p></p>
+            <p>El archivo de Jenaro Amezcua conserva diferentes reproducciones del plan de Ayala. Este mecanuscrito, con fecha 28 de noviembre de 1911, cuenta con tres fojas en tinta azul y sus bordes un tanto maltratados no impiden su lectura.</p>
+            <a href="#sala5">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="#sala6">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_06.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="#sala6">
+              <h3>6. Morelos</h3>
+            </a>
+            <p></p>
+            <p>En el caso de este impreso, también conservado por el Centro de Estudios de Historia de México-Carso, nos interesan particularmente sus características físicas.</p>
+            <a href="#sala6">Ir a sala</a>
+          </div>
+        </div>
+
+        <img src="work/models/memorica/recursos/img/plan_ayala/separador.png" alt="" class="img-fluid my-5">
+
+        <div class="row">
+          <div class="col-12 col-sm-5 thumb">
+            <a href="/{user@getLanguage}/{topic@getWebSiteId}/Plan_de_Ayala_Interactivo">
+              <img src="work/models/memorica/recursos/img/plan_ayala/thumb_07.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-7 pt-4 pt-sm-0 desc">
+            <a href="/{user@getLanguage}/{topic@getWebSiteId}/Plan_de_Ayala_Interactivo">
+              <h3>¡Compara!</h3>
+            </a>
+            <p></p>
+            <p>En esta sección pueden apreciarse las diferencias que existen en el contenido de cada uno de los cinco planes que mostramos en esta exposición. Muchas de ellas son menores, y en esta herramienta interactiva han sido señaladas en
+              diversos colores para detectarlas según la versión elegida.</p>
+            <a href="/{user@getLanguage}/{topic@getWebSiteId}/Plan_de_Ayala_Interactivo">Ir a sala</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 1 -->
+  <div id="sala1" class="separador verde jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>1. SALA CIUDAD DE MÉXICO</h1>
+    </div>
+  </div>
+
+  <div id="sala1" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">“El Famoso PLAN de AYALA”<br>en <em>El Diario del Hogar</em></h2>
+        <h3 class="pb-4">15 de diciembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column align-items-end">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_01.jpg" class="img-fluid" alt="">
+          <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=AqUp-W8B8VYQR5lRCqxX">Ir a documento</a>
+        </div>
+        <div class="py-5">
+          <p><em>El Diario del Hogar</em> fue el primer periódico, y el único en ese momento, en imprimir íntegro, el plan de Ayala, el día 15 de diciembre de 1911. Este periódico, fundado por Filomeno Mata, circuló en la Ciudad de México entre los años 1881
+            y 1912. Mata falleció en julio de 1911 y tomó la dirección del diario Juan Sarabia apenas unos meses más, pues el 30 de junio de 1912 se imprimió su último número. Bajo la dirección de Sarabia fue que se publicó en diciembre de 1911 el
+            plan de Ayala.</p>
+          <p>Cuenta Gildardo Magaña en su obra Emiliano Zapata y el agrarismo en México que Don Enrique M. Bonilla, redactor de <em>El Diario del Hogar</em>, en una entrevista con el presidente Madero, se lo mostró diciéndole:</p>
+          <div class="jumbotron bg-transparent">
+            <h3 class="quote mb-3">—Mire usted, señor, el famoso Plan de Ayala que ha proclamado Zapata, desconociendo a su gobierno, ¿no cree usted que debemos publicarlo?</h3>
+            <h3 class="quote mb-3">La lectura del documento produjo al presidente una impresión desagradable y dirigiéndose a Bonilla, le dijo:</h3>
+            <h3 class="quote mb-3">—Sí, publíquelo, para que todos conozcan a ese loco de Zapata.</h3>
+          </div>
+          <p>Esta versión es muy similar a la mecanuscrita que se encuentra en el fondo Genovevo de la O, custodiado por el Archivo General de la Nación (AGN). Sólo en ambas versiones se omite, en el artículo 12, la convocatoria del presidente
+            interino (que habría de ser nombrado por los jefes revolucionarios de los distintos estados) a elecciones para la conformación del Congreso de la Unión. Tanto las versiones de <em>El Diario del Hogar</em> como la del fondo Genovevo de la O
+            asientan, en el mismo artículo, que sería el presidente interino quien convocaría a la elección de los poderes federales.</p>
+          <div class="imagen mx-0 px-0 py-4 mx-sm-5 px-sm-0 py-sm-4">
+            <img class="img-fluid" src="work/models/memorica/recursos/img/plan_ayala/deco_06.png" alt="">
+          </div>
+          <p>Para el historiador John Womack, las versiones que consideran en el artículo 12 las elecciones para la formación del Congreso y que éste a su vez convocaría a elecciones a fin de constituir de los demás poderes federales, son versiones
+            “perfeccionadas” de la primera.</p>
+
+          <!-- Sabías que -->
+          <a href="#" data-toggle="modal" data-target="#sabiasque1">¿Sabías que?</a>
+
+          <div class="modal fade" id="sabiasque1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-centered " role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h4 class="modal-title" id="exampleModalLabel">¿SABÍAS QUE?</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body d-flex flex-column justify-content-center">
+                  <p>El <a href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=t905-W8B1i1oLPn4i-Ka">Plan de San Luis</a> es otro documento relevante en la historia de México. Lo promulgó Francisco I. Madero el 5 de octubre de 1910; en él se
+                    declararon nulas las elecciones celebradas para presidente y vicepresidente y también se desconoció el gobierno de Porfirio Díaz. En el artículo 3° se menciona la restitución de tierras a sus antiguos poseedores o a sus herederos,
+                    artículo que logró adeptos como Emiliano Zapata.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 2 -->
+  <div id="sala2" class="separador rojo jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>2. SALA MAPAZTLÁN DE AYALA</h1>
+    </div>
+  </div>
+
+  <div id="sala2" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">Plan de Mapaztlán de Ayala,<br> estado de Morelos</h2>
+        <h3 class="pb-4">11 de noviembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column align-items-end">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_02.jpg" class="img-fluid" alt="">
+          <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=neIVr28BEXm4CM_eUKYQ">Ir a documento</a>
+        </div>
+        <div class="py-5">
+          <p>El Archivo General de la Nación, en el ramo Archivos particulares, incluye el fondo Genovevo de la O. El primer expediente de la caja 19 contiene otras copias del plan y actas de ratificación. El que nos interesa es el primer documento
+            del legajo; se trata de un mecanuscrito de cuatro fojas con fecha 25 de noviembre de 1911 y de acuerdo con la última línea del documento es una copia fiel que se hizo en “las montañas de Puebla”, 16 días después de que se firmó el
+            original en Ayoxuxtla. Quien se encargó de elaborar la copia utilizó algunos elementos tipográficos para organizar y separar los componentes del documento. Posee algunas marginalias que hacen referencia al fondo al que pertenece y al
+            número de hoja.</p>
+          <div class="mx-0 px-0 pb-3 mx-sm-5 px-sm-5 pb-sm-5">
+            <img src="work/models/memorica/recursos/img/plan_ayala/genovevo.jpg" class="px-5 img-fluid" alt="">
+          </div>
+          <p>Genovevo de la O (1876-1952) nació en Santa María Ahuacatitlán, Morelos, y apoyó –como muchos otros morelenses– el plan de San Luis Potosí, de Francisco I. Madero y, al considerar que éste no lo había cumplido, se separó del maderismo y
+            se unió a Zapata y a sus hombres, respaldando el plan de Ayala. El archivo de Genovevo de la O fue encontrado durante una investigación desarrollada por Martha Rodríguez García, quien pudo adquirirlo de Catalina Ensástegui viuda de
+            Genovevo de la O.</p>
+          <p>Esta versión es la única, de entre las que conforman esta exposición, que en el título no dice de Ayala o de la Villa de Ayala. Su título es “Plan de Mapaztlán de Ayala Edo. de Morelos”. Mapaztlán (o Mapachtlan) fue un asentamiento
+            fundado en el siglo XVIII por trabajadores y aparceros de la hacienda del mismo nombre. En 1868, San José de Mapachtlan cambió de nombre a Villa de Ayala —en honor a uno de los líderes de la región durante la guerra independentista,
+            Francisco Ayala— y 10 años más tarde se elevó a categoría de municipio. El denominarlo “Plan de Mapaztlán de Ayala” significa que aún para 1910 la gente de la región seguía reconociendo ese nombre para la villa de Ayala y, quizá, se
+            buscaba otorgar un valor todavía más simbólico al documento al hacer referencia a una localidad de origen colonial.</p>
+          <div class="imagen mx-0 px-0 py-4 mx-sm-5 px-sm py-sm-4">
+            <img class="img-fluid" src="work/models/memorica/recursos/img/plan_ayala/deco_03.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 3 -->
+  <div id="sala3" class="separador verde jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>3. SALA TEJALPA-ACATLÁN, PUEBLA</h1>
+    </div>
+  </div>
+
+  <div id="sala3" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">Plan de Ayala</h2>
+        <h3 class="pb-4">28 de noviembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_03.jpg" class="img-fluid" alt="">
+          <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <a class="mt-1" href="work/models/memorica/recursos/img/plan_ayala/PlanDeAyala_Version_FondoOctavioyGenaroMaganaCerda_Transcripcion.pdf">Descargar transcripción</a>
+            <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=A6Up-W8B8VYQR5lRCqx4">Ir a documento</a>
+          </div>
+        </div>
+        <div class="py-5">
+          <p>En el expediente 1087 del fondo Gildardo y Octavio Magaña Cerda del Archivo Histórico de la UNAM se encuentra un facsímil del famoso plan de Ayala, de fecha 28 de noviembre de 1911. El expediente está compuesto por siete fotografías y en
+            ellas puede apreciarse la grafía clara con que fue copiado el célebre documento y las firmas de los generales, coroneles y capitanes que apoyaron el plan una vez que Emiliano Zapata lo dio a conocer a sus seguidores en Ayoxuxtla, Puebla.
+          </p>
+          <p>La reproducción del documento se resguarda en el AHUNAM debido a que en 1961 Octavio Magaña donó su archivo y el de su hermano Gildardo al Instituto de Investigaciones Históricas. Gildardo Magaña mencionó que el facsímil fue una de las
+            copias elaboradas por Otilio Montaño, con quien Zapata redactó el plan.</p>
+          <p>Originalmente, este plan contaba con ocho fotografías en las que podía leerse el documento completo. A pesar de que no se conserva íntegro, podemos consultar el folio faltante gracias a la amplia reproducción del plan de marras. Por
+            ejemplo, el propio Magaña lo integró en su libro <em>Emiliano Zapata y el agrarismo en México</em> (1934); en 1979, la Secretaría de Gobernación editó una versión facsimilar; y en 2019, conmemorando el centenario luctuoso de Zapata, se publicó en
+            el folleto <em>El Plan de Ayala</em>, una coedición del INEHRM, el FCE y la Coordinación de Memoria Histórica y Cultural de México.</p>
+          <div class="imagen mx-0 px-0 py-4 mx-sm-5 px-sm-5 py-sm-4">
+            <img class="img-fluid px-2" src="work/models/memorica/recursos/img/plan_ayala/deco_02.png" alt="">
+          </div>
+          <p>En esta versión transcrita se aprecian detalles como el título centrado y la manera en que se distribuyeron los párrafos facilitando la lectura del documento a ojos inexpertos, lo que también podría explicar su amplia difusión en
+            publicaciones posteriores.</p>
+          <p>Una lectura atenta permite apreciar que en esta versión hay siete firmas que no se encuentran en las otras versiones que mostramos. Inicialmente, el plan se dio a conocer por medio de las copias que se fueron compartiendo para que los
+            principales jefes conservaran un ejemplar, por lo que la variación en los firmantes es significativa; de entre esas firmas figuran la de Francisco Mercado, Sotero Guzmán, Melesio Rodríguez, Gregorio García, Florentino Osorio, Camerino
+            Menchaca y Juan Esteves.</p>
+          <p>Otra diferencia interesante que podemos apreciar es que al final de la última hoja de firmas se agregó con máquina de escribir una nota que hace referencia a que Agustín del Pozo obtuvo el documento de los zapatistas capitaneados por
+            Jesús <em>El Tuerto</em> Morales, en una batalla librada el 8 de enero de 1912; además, nos proporciona algunos detalles del suceso, como las cifras de los hombres que combatieron, los presos y fusilados. Por otra parte, Del Pozo menciona un botín
+            que entregó al general Rafael Eguía Lis, quien dio el parte de guerra sobre el suceso a la secretaría correspondiente.</p>
+
+          <!-- Sabías que -->
+          <a href="#" data-toggle="modal" data-target="#sabiasque3">¿Sabías que?</a>
+
+          <div class="modal fade" id="sabiasque3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">¿SABÍAS QUE?</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Otilio Montaño (1877-1917), uno de los autores del plan de Ayala, se graduó en Cuautla como profesor; antes de simpatizar con Madero, ejerció su profesión en escuelas de Tepalcingo y Jonacatepec y también dirigió la de Villa de
+                    Ayala. En 1911 se sumó a las tropas de Torres Burgos y presentó combate en el estado de Morelos. Cuando los zapatistas no lograron que Madero cumpliera con el plan de San Luis, Emiliano Zapata y Montaño se retiraron a la parte
+                    poblana de la Sierra Nevada y escribieron el plan de Ayala. En 1915 fue secretario de Instrucción Pública durante el gobierno convencionista de Lagos Cházaro. En 1917 se le acusó de ser autor intelectual de una deserción de
+                    zapatistas y, a pesar de ser uno de los hombres más cercanos a Zapata, fue juzgado por un tribunal militar en donde se le declaró culpable. Murió fusilado el 17 de mayo de 1917.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 4 -->
+  <div id="sala4" class="separador rojo jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>4. SALA VILLA DE AYALA</h1>
+    </div>
+  </div>
+
+  <div id="sala4" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">Plan de Ayala</h2>
+        <h3 class="pb-4">28 de noviembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_04.jpg" class="img-fluid" alt="">
+          <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <a class="mt-1" href="work/models/memorica/recursos/img/plan_ayala/PlanDeAyala_Version_FondoJenaroAmezcua_Transcripcion.pdf">Descargar transcripción</a>
+            <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=_6Up-W8B8VYQR5lRBKut">Ir a documento</a>
+          </div>
+        </div>
+        <div class="py-5">
+          <p>Fue en el año de 1965 cuando la empresa Condumex, antecedente de la Fundación Carlos Slim, fundada por un grupo de inversionistas estadunidenses, italianos y mexicanos, rescató los archivos de Venustiano Carranza y Emiliano Zapata; entre
+            los fondos conservados hoy en día se encuentra el de Jenaro Amezcua (1887-1949), militar mexicano de extracción maderista nacido en la Ciudad de México. El general Amezcua murió dejando un archivo personal con más de 1831 documentos,
+            fechados entre 1909 y 1947.</p>
+          <p>Buena parte de los documentos del fondo Amezcua están relacionados con el movimiento zapatista y, de entre ellos, tomamos dos versiones existentes del plan de Ayala para la presente exposición, cada una con su atractivo propio, y ya que
+            Amezcua fue comisionado por el mismo Zapata para viajar al extranjero a conseguir recursos y difundir las causas del movimiento revolucionario, es natural que conservara en su archivo alguna copia del plan revolucionario.</p>
+          <div class="imagen mx-0 px-0 py-2 mx-sm-5 px-sm-0 py-sm-2">
+            <img class="img-fluid" src="work/models/memorica/recursos/img/plan_ayala/deco_01.png" alt="">
+          </div>
+          <p>Uno de los documentos conservado en el archivo Carso es un manuscrito con fecha de 28 de noviembre de 1911. El texto se compone de 11 fojas, cuyos bordes superiores se han desgastado por el uso y por el tiempo. También puede observarse
+            que la caligrafía de este documento es totalmente distinta a la del plan del AHUNAM; cierta inclinación a la izquierda y trazos largos hacen que la lectura sea más pausada. Cabe señalar que la distribución que se dio al texto es homogénea
+            y se utilizaron pocos recursos para diferenciar las partes que componen el plan.</p>
+          <p>En cuanto al contenido, es menester señalar que en esta primera versión de Carso también hay diferencias, a saber: el artículo 12 de la versión manuscrita cuenta con un señalamiento que también aparece en el documento reunido por Magaña,
+            localizado en el Archivo Zapata de la UNAM, donde se menciona que al triunfar la revolución será el Congreso de la Unión el encargado de convocar a elecciones y no el presidente interino, mientras que en los planes de <em>El Diario del Hogar</em>
+            y el del AGN, éstos difieren en el mencionado artículo diciendo que será el presidente quien convocará a elecciones.</p>
+          <p>Que el plan del que nos ocupemos tenga ese perfeccionamiento sugiere que apunta a que es un plan copiado poco después de la modificación del artículo 12 por lo que dicha especificidad le concede un valor agregado al plan de Ayala del
+            fondo Amezcua, personaje cercano a Emiliano Zapata y a los ideales del movimiento suriano. Otro detalle relevante de esta versión es la nota con la que Gildardo Magaña, 15 años después de la creación del plan, certificó la autenticidad
+            del documento, considerándolo uno de los pocos originales conservados.</p>
+
+          <!-- Sabías que -->
+          <a href="#" data-toggle="modal" data-target="#sabiasque4">¿Sabías que?</a>
+
+          <div class="modal fade" id="sabiasque4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">¿SABÍAS QUE?</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>El plan de Ayala se difundió por los estados del centro y sur del país, por lo que dirigentes locales, al enterarse de las consignas del documento, se declararon adeptos al plan. Sabemos que en Michoacán Eutimio Figueroa y Miguel
+                    de la Trinidad Regalado apoyaron la causa zapatista, también tuvo respaldo en otros estados como Guerrero, el Estado de México, Tlaxcala, Puebla, el Distrito Federal, Oaxaca, Hidalgo, Veracruz, incluso en Durango, Chihuahua y San
+                    Luis Potosí. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 5 -->
+  <div id="sala5" class="separador verde jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>5. SALA AYOXUXTLA</h1>
+    </div>
+  </div>
+
+  <div id="sala5" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">Plan de Ayala</h2>
+        <h3 class="pb-4">28 de noviembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column align-items-end">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_05.jpg" class="img-fluid" alt="">
+          <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=AaUp-W8B8VYQR5lRCqwu">Ir a documento</a>
+        </div>
+        <div class="py-5">
+          <p>El archivo de Jenaro Amezcua conserva diferentes reproducciones del plan de Ayala. Este mecanuscrito, con fecha 28 de noviembre de 1911, cuenta con tres fojas en tinta azul y sus bordes un tanto maltratados no impiden su lectura. Este
+            escrito nos invita a pensar, entre otras cosas, en el copista; la persona que se tomó el tiempo para hacer esta transcripción, contaba, por lo menos, con una máquina de escribir, tinta y unas cuantas hojas. Es difícil saberlo, pero la
+            estructura misma del documento nos sugiere que al menos esta versión fue elaborada en condiciones más favorables, ya que se trata de un documento bien distribuido en el que se usaron recursos tipográficos para resaltar el título de tan
+            importante plan y tener una copia más cuidada; a pesar de esto —y como es natural— en este documento también pueden observarse tachaduras en algunas palabras.</p>
+          <div class="imagen mx-0 px-0 py-4 mx-sm-5 px-sm-0 py-sm-4">
+            <img class="img-fluid" src="work/models/memorica/recursos/img/plan_ayala/deco_04.png" alt="">
+          </div>
+          <p>En el contenido, las diferencias más notables consisten en el cambio de orden en algunas palabras. Quien reprodujo el plan zapatista consideró necesario que el documento necesitaba más descansos, por lo que son constantes las adiciones
+            de comas en todo el texto; lo anterior reafirma un poco más la idea de que esta versión fue elaborada con la intención de conservar un escrito más limpio. Aunque las variaciones de este ejemplar poco alteran el contenido del texto, sí dan
+            cuenta, sobre todo, de los procesos de apropiación que un documento sufre al pasar de mano en mano, confirmando que aquel legendario original de Montaño fue transformándose con el paso del tiempo.</p>
+
+          <!-- Sabías que -->
+          <a href="#" data-toggle="modal" data-target="#sabiasque5">¿Sabías que?</a>
+
+          <div class="modal fade" id="sabiasque5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">¿SABÍAS QUE?</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>La Library of Congress resguarda un libro titulado <em>Plan of Ayala</em>. Una inscripción en la portada sugiere que el ejemplar fue un obsequio del periódico <em>Tierra y Justicia</em>; de igual forma se alcanza a leer el nombre Ignacio Eduardo
+                    Rodríguez, director del mencionado periódico que estuvo en contacto con Genovevo de la O y otros zapatistas para propagar el plan en otros países. Rodríguez quería imprimir 320 mil ejemplares del plan zapatista en idiomas como el
+                    alemán, francés, inglés e italiano.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Sala 6 -->
+  <div id="sala6" class="separador rojo jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <h1>6. SALA MORELOS</h1>
+    </div>
+  </div>
+
+  <div id="sala6" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-2">Plan de Ayala</h2>
+        <h3 class="pb-4">28 de noviembre de 1911</h3>
+        <div class="mx-1 mx-sm-5 d-flex flex-column align-items-end">
+          <img src="work/models/memorica/recursos/img/plan_ayala/large_06.jpg" class="img-fluid" alt="">
+          <a class="mt-1" href="https://memoricamexico.gob.mx/swb/memorica/Cedula?oId=AKUp-W8B8VYQR5lRCqwG">Ir a documento</a>
+        </div>
+        <div class="py-5">
+          <p>En el caso de este impreso, también conservado por el Centro de Estudios de Historia de México-Carso, nos interesan particularmente sus características físicas. En este folio pueden apreciarse varios dobleces: algunos se hicieron para
+            reducir su tamaño, por lo que podría tratarse de un documento poco más grande que una hoja de papel promedio y que, para ser archivado o guardado, se remarcó uno de los dobleces en la parte inferior para ajustarlo a la medida de una
+            carpeta; lo anterior lo confirmamos por las cuatro perforaciones del lado izquierdo —que sólo se distinguen arriba del doblez pronunciado—, y también porque el fondo Amezcua contiene sus documentos en carpetas.</p>
+          <p>Es posible que este documento haya pasado por diversas manos, incluso podríamos pensar que se desdobló muchísimas veces para mostrarlo a los interesados y es por esto que las intersecciones de los pliegues se desgastaron tanto que
+            desaparecieron, dejando en el documento pequeños agujeros; los bordes remarcados en esta hoja de papel también cuentan una historia, la de los alcances de este documento histórico, del que se han hecho tantas y tan diversas copias para
+            diversos fines; si nos aventuramos un poco, podemos imaginar que esta impresión se hizo para ser expuesta, de ahí el formato más grande y el título con letras de mayor tamaño para que inmediatamente aquel que supiera leer pudiera saber
+            que era el plan de Ayala. Es evidente que de no ser por la intervención para su conservación el documento estaría más deteriorado y los procedimientos de restauración son algo que puede observarse claramente en este objeto.</p>
+          <div class="imagen mx-0 px-0 py-4 mx-sm-5 px-sm-0 py-sm-4">
+            <img class="img-fluid" src="work/models/memorica/recursos/img/plan_ayala/deco_05.png" alt="">
+          </div>
+          <p>Este texto, con fecha del 28 de noviembre de 1911, seguramente se imprimió luego de la publicación en <em>El Diario del Hogar</em>, también, después de que se perfeccionara el artículo 12 que, como hemos visto en esta exposición, es una de las
+            diferencias más contundentes que presenta este documento. El impreso muestra el artículo actualizado, lo que nos sugiere que para hacer esta copia habrían transcurrido días suficientes para corregir el vacío legal del primer manuscrito de
+            Zapata y Montaño pero también el tiempo necesario para dar a conocer, reproducir o copiar la versión mejorada del plan.</p>
+
+          <!-- Sabías que -->
+          <a href="#" data-toggle="modal" data-target="#sabiasque6">¿Sabías que?</a>
+
+          <div class="modal fade" id="sabiasque6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">¿SABÍAS QUE?</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>·Después del <a href="#">asesinato de Francisco I. Madero</a>, el plan zapatista fue reformado para desconocer al gobierno de Victoriano Huerta. Con la reforma del 30 de mayo de 1913 se designó a Emiliano Zapata único jefe del
+                    movimiento.</p>
+                  <p>·Tres meses después de la <a href="#">muerte de Emiliano Zapata</a>, Genovevo de la O, Gildardo Magaña y otros “antiguos revolucionarios del Sur” promulgaron el Plan de Milpa Alta que, inspirado en el de Ayala, continuaba
+                    defendiendo el reparto agrario.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Epílogo -->
+  <div id="sala7" class="separador verde jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+    <div class="container">
+      <a href="/{user@getLanguage}/{topic@getWebSiteId}/Plan_de_Ayala_Interactivo">
+        <h1>COMPARA</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- Epílogo -->
+  <div id="outro" class="container-fluid py-5">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-4">EPÍLOGO</h2>
+        <p>En esta exposición mostramos seis versiones del plan revolucionario que Emiliano Zapata y Otilio Montaño concibieron en Ayoxuxtla en noviembre de 1911. Dos planes se realizaron a mano, dos más en máquina de escribir y los otros restantes
+          son documentos impresos; todos poseen diversos formatos, soportes, estados de conservación y procedencias varias. Contrastamos seis objetos pero con éstos las copias del plan no terminan, todo lo contrario, aumentan la duda de sobre cuántas
+          reproducciones existen dispersas en los archivos y bibliotecas del país, sin pensar en las reproducciones que se conservan en otras instituciones internacionales. Como se mencionó en las salas de esta muestra, el plan de Ayala tuvo tan
+          amplia difusión que zapatistas como Gildardo Magaña, Jenaro Amezcua y Genovevo de la O decidieron reunir en sus archivos varias copias del programa revolucionario; cabe destacar que los tres conservaron más de una versión, ya que el plan
+          era tan importante para ellos que cualquier reproducción ameritaba su resguardo.</p>
+
+        <p>Con los objetos mostrados en esta exposición podemos apreciar la evolución del plan, esto es: cuando se propagó por medio de textos hechos a mano y que apenas circularon en los grupos cercanos a Zapata; después, las hojas mecanuscritas
+          permitieron difundir las consignas claramente, logrando aumentar las copias en poco tiempo. Finalmente, los impresos, los cuales, sin duda alguna, fueron elaborados con la intención de hacer de total dominio público los fundamentos del
+          plan. Como Womack dice en su libro Zapata y la Revolución mexicana, para los zapatistas “el Plan de Ayala tenía un carácter sagrado”, consideraban que lo plasmado en 15 artículos era mucho más que un plan de acción. Abundan las
+          reproducciones, reimpresiones y nuevas ediciones del plan, todas con características particulares, y con ello se prueba la influencia y el valor que campesinos y otros adeptos le dieron al revolucionario plan de Ayala.</p>
+        <div class="imagen mx-0 px-0 py-5 mx-sm-5 px-sm-5 py-sm-5">
+          <img class="img-fluid px-2" src="work/models/memorica/recursos/img/plan_ayala/epilogo.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div id="creditos" class="container-fluid py-5 sala">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-6 px-5">
+        <h2 class="pb-4">REFERENCIAS</h2>
+        <h3 class="text-left">Acervos</h3>
+        <ul>
+          <li>AGN, Archivo General de la Nación, fondo Genovevo de la O.</li>
+          <li>AHUNAM, Archivo Histórico de la UNAM, fondo Gildardo y Octavio Magaña.</li>
+          <li>Centro de Estudios de Historia de México-Carso, fondo Jenaro Amezcua y fondo Plan de Ayala.</li>
+        </ul>
+        <h3 class="text-left">Hemerografía</h3>
+        <ul>
+          <li>Diario del Hogar. Periódico de las Familias, El, México.</li>
+        </ul>
+        <h3 class="text-left">Bibliografía</h3>
+        <ul>
+          <li>Ávila, Felipe, Tierra y Libertad. Breve historia del zapatismo, México, Paidós, 2018.</li>
+          <li>Castro Zapata, Édgar y Francisco Pineda Gómez comp., A cien años del Plan de Ayala, México, Era, 2013.</li>
+          <li>De la O Ortega, Sagrario, “Catálogo analítico del fondo Genovevo de la O, 1910-1919 t. 1”, tesis de licenciatura en historia, Colegio de Historia-FFyL-UNAM, 2005.</li>
+          <li>Magaña, Gildardo, Emiliano Zapata y el agrarismo en México, t. II, México, INEHRM, 2019, p. 147 (Clásicos del Zapatismo).</li>
+          <li>Musacchio, Humberto, Milenios de México, México, Hoja Casa Editorial, 1999, 3 tomos.</li>
+          <li>Pineda Gómez, Francisco, Ejército Libertador, México, Era, 2013.</li>
+          <li>Womack, John, Zapata y la Revolución mexicana, México, FCE, 2017.</li>
+        </ul>
+
+        <h3 class="text-left">Créditos</h3>
+        <ul>
+          <li>Curaduría: Rebeca Flores y Rodrigo Fernández.</li>
+          <li>Diseño: Brian Miranda.</li>
+        </ul>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    //loader
+    $(window).on("load", function(e) {
+      $("#loader").animate({
+        opacity: 0,
+        zIndex: -1
+      })
+
+      console.log("done");
+    });
+
+    //nav menu
+    $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
+
+    $('.go').click(function() {
+      $('#overlay').toggleClass('open');
+      $('.button_container').removeClass('active');
+    });
+
+    // smooth scroll
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
